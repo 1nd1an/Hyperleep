@@ -6,7 +6,7 @@ int main(){
     for(int x=0; x<100; x++){
         cout << "Lowda Blue Color" << "\n";
         cout<<"kp is this";
-        cout<<"cheaths is gay">>endl;
+        cout<<"cheaths is stight but kp not so sure">>endl;
         cout<<"Mahesh Dall E"<<"\n";
     }
     return 0;
