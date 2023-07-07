@@ -7,7 +7,7 @@ int main(){
         cout << "Lowda Blue Color" << "\n";
         cout<<"kp is this";
         cout<<"cheaths is gay">>endl;
-    
+        cout<<"Mahesh Dall E"<<"\n";
     }
     return 0;
 }
