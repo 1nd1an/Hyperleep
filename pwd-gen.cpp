@@ -2,27 +2,27 @@
 #include <cstdlib>
 #include <ctime>
 #include <string>
+
 using std::cin;
 using std::cout;
 using std::string;
 
 string pwdgen(int length){
-    string password;
+    string pwd;
     string charset="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()_+";
     srand(time(0));
-    for(int i=0;i<length;i++){
-        int index = rand() % charset.length();
-        password += charset[index];
+    for(int i=0; i<length;i++){
+        int index = rand()%charset.length();
+        pwd+=charset[index];
     }
-    return password;
+    return pwd;
 }
 
 int main(){
     int length;
-    cout << "Password Generator"<<"\n";
-    cout << "How long do you like it to be?"<<"\n";
-    cin >> length;
+    cout<<"How long do you want the password to be?"<<"\n";
+    cin>>length;
     string pwd=pwdgen(length);
-    cout << "Generated Password: " << pwd << "\n";
+    cout << "Here is a random password of "<<length<<" charecters long:" << pwd;
     return 0;
 }
